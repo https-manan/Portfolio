@@ -5,8 +5,7 @@ export default function Resume() {
         <div>
           <h2 className="mb-3 font-display text-4xl text-ink md:text-5xl">Resume</h2>
           <p className="max-w-[50ch] font-body text-base text-muted">
-            Want the full picture in one document — experience, education, and everything above?
-            Grab a copy below.
+            DOWNLOAD RESUME HERE
           </p>
         </div>
         <a

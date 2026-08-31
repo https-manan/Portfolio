@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section id="top" className="mx-auto max-w-content px-6 pb-16 pt-14 md:px-10 md:pb-20 md:pt-16">
-      <span className="mb-6 inline-block bg-ink px-3 py-1.5 font-mono text-sm font-medium text-bg">
+      <span className="mb-6 inline-block px-3 py-1.5 font-mono text-lg text-5xl font-extrabold text-black">
         Manan Bhardwaj
       </span>
       <h1 className="font-display text-5xl leading-[1.05] tracking-tight text-ink sm:text-6xl md:text-7xl">
@@ -26,4 +26,4 @@ export default function Hero() {
       </div>
     </section>
   );
-} 
+}
