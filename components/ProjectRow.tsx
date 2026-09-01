@@ -7,7 +7,7 @@ export default function ProjectRow({ project }: { project: Project }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-line py-10 first:pt-0 last:border-b-0">
+    <div id={project.slug} className="scroll-mt-24 border-b border-line py-10 first:pt-0 last:border-b-0">
       <div className="flex flex-col gap-8 md:flex-row md:items-center md:gap-12">
         <span className="font-display text-2xl text-muted md:w-16">{project.index}</span>
 

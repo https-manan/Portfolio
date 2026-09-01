@@ -10,17 +10,15 @@ export default function Nav() {
       <nav className="mx-auto flex max-w-content items-center justify-between px-6 py-5 md:px-10">
         <a
           href="#top"
-          className="bg-ink px-2.5 py-1 font-mono text-xs font-medium text-bg"
-        >
-          Manan Bhardwaj
+          className="px-2.5 py-1 font-mono text-lg font-bold text-black md:text-2xl">
+          Manan
         </a>
         <ul className="flex items-center gap-6 text-sm">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-ink transition-opacity hover:opacity-60"
-              >
+                className="text-ink transition-opacity hover:opacity-60">
                 {link.label}
               </a>
             </li>

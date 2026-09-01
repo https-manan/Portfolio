@@ -5,7 +5,7 @@ export default function Resume() {
         <div>
           <h2 className="mb-3 font-display text-4xl text-ink md:text-5xl">Resume</h2>
           <p className="max-w-[50ch] font-body text-base text-muted">
-            DOWNLOAD RESUME HERE
+            Download my resume from here!!!
           </p>
         </div>
         <a

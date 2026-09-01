@@ -1,4 +1,5 @@
 export type Project = {
+  slug: string;
   index: string;
   name: string;
   category: "Dev" | "ML";
@@ -12,18 +13,20 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "nexusroom",
     index: "01",
     name: "NexusRoom",
     category: "Dev",
     oneLiner: "A 2D metaverse where players roam rooms and video-call whoever they walk up to.",
     detail:
-      "A fully backed 2D virtual space with a real-time room and movement engine. Players roam a shared map, and when two players are close enough, a live video call opens automatically between them. Rooms and presence run over WebSockets; calls run peer-to-peer over WebRTC. Built as a TypeScript monorepo with Prisma handling persistence.",
+      "A fully backed 2D virtual space with a real-time room and movement engine. Players roam in a shared room, and when two players are close enough, a live video call opens automatically between them. Rooms and presence run over WebSockets; calls run peer-to-peer over WebRTC. Built as a TypeScript monorepo with Prisma handling persistence.",
     stack: ["TypeScript", "WebSockets", "WebRTC", "Prisma", "Monorepo"],
     liveUrl: "",
     repoUrl: "https://github.com/https-manan",
     image: "",
   },
   {
+    slug: "seatlock",
     index: "02",
     name: "SeatLock",
     category: "Dev",
@@ -36,6 +39,7 @@ export const projects: Project[] = [
     image: "",
   },
   {
+    slug: "resumeiq",
     index: "03",
     name: "ResumeIQ",
     category: "ML",
@@ -48,6 +52,7 @@ export const projects: Project[] = [
     image: "",
   },
   {
+    slug: "stylefusion",
     index: "04",
     name: "StyleFusion",
     category: "ML",
@@ -60,6 +65,7 @@ export const projects: Project[] = [
     image: "",
   },
   {
+    slug: "classroll-ai",
     index: "05",
     name: "ClassRoll AI",
     category: "ML",

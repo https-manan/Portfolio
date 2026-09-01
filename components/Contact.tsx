@@ -41,27 +41,28 @@ export default function Contact() {
         <div>
           <h2 className="mb-4 font-display text-4xl text-ink md:text-5xl">Contact</h2>
           <p className="mb-8 max-w-[42ch] font-body text-base text-muted">
-            Have a project, a role, or just want to talk shop? Send a message and I&apos;ll get
-            back to you directly.
+           I’m currently open to opportunities and looking for a role where I can contribute, learn, and build meaningful things. Feel free to reach out.
+
           </p>
           <div className="space-y-2 font-body text-sm text-ink">
             <p>
-              <a href="mailto:mananbhardwaj2705@gmail.com" className="underline underline-offset-4">
+              <a href="mailto:mananbhardwaj2705@gmail.com" className="underline underline-offset-4 hover:text-blue-700">
                 mananbhardwaj2705@gmail.com
               </a>
             </p>
+            <br />
             <p>
               <a
                 href="https://github.com/https-manan"
                 target="_blank"
                 rel="noreferrer"
-                className="underline underline-offset-4"
-              >
+                className="underline underline-offset-4 hover:text-blue-700">
                 GitHub
               </a>
             </p>
+            <br />
             <p>
-              <a href="#" className="underline underline-offset-4">
+              <a href="#" className="underline underline-offset-4 hover:text-blue-700">
                 LinkedIn
               </a>
             </p>

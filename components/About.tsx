@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { aiSkills, webSkillGroups } from "@/lib/skills";
+import { projects } from "@/lib/projects";
 
 const imageSrc = "/manan.png";
 
@@ -14,16 +15,19 @@ export default function About() {
   return (
     <section id="about" className="border-t border-line bg-bg-alt">
       <div className="mx-auto max-w-content px-6 py-16 md:px-10 md:py-20">
-        <p className="mb-8 font-mono text-sm text-muted">$ about</p>
-
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-[180px_1fr] md:gap-12">
-          <div className="relative aspect-[3/4] w-full max-w-[180px] overflow-hidden border border-line bg-bg">
+        <h2 className="mb-10 font-display text-4xl text-ink md:text-5xl">About</h2>
+        
+        {/* Adjusted grid layout and gap for breathing space */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-[190px_1fr] md:gap-32">
+          
+          {/* Adjusted image container height and width */}
+          <div className="relative aspect-[4/5] w-full max-w-[190px] shrink-0 overflow-hidden border border-line bg-bg">
             {imageSrc ? (
               <Image
                 src={imageSrc}
                 alt="Manan Bhardwaj"
                 fill
-                sizes="180px"
+                sizes="190px"
                 className="object-cover grayscale"
                 priority
               />
@@ -37,9 +41,28 @@ export default function About() {
           <div>
             <p className="max-w-[60ch] font-body text-lg leading-relaxed text-ink">
               Hi, I&apos;m Manan. I build real-time backend systems and train ML models from
-              scratch, then ship both behind a clean, simple interface. If it&apos;s below, it
-              started as &ldquo;can this actually work&rdquo; and turned into a full project.
+              scratch, then ship both behind a clean, simple interface. Here are a few examples
+              of my work.
             </p>
+
+            <nav className="mt-8 max-w-[420px]" aria-label="Jump to project">
+              <ul className="divide-y divide-line border-t border-line">
+                {projects.map((project) => (
+                  <li key={project.slug}>
+                    <a
+                      href={`#${project.slug}`}
+                      className="group flex items-center justify-between py-3 font-mono text-sm text-ink transition-opacity hover:opacity-60"
+                    >
+                      <span className="flex items-center gap-3">
+                        <span className="text-muted">{project.index}</span>
+                        <span>{project.name}</span>
+                      </span>
+                      <span className="text-muted">{project.category}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
 
