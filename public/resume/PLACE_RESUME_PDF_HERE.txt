@@ -1,5 +1,0 @@
-Drop your resume file here, named exactly: resume.pdf
-Full path: public/resume/resume.pdf
-
-The "Download resume" button on the site links directly to /resume/resume.pdf,
-so as soon as this file exists, the button works — no code changes needed.

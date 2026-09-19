@@ -11,8 +11,6 @@ const anton = Anton({
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -21,11 +19,11 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://mananbhardwaj.vercel.app";
+const siteUrl = "https://google.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Manan Bhardwaj — Product Engineer",
+  title: "Manan Bhardwaj",
   description:
     "Manan Bhardwaj brings imagination to life through clean, simple web and cloud-native applications, with deep work across AI, machine learning, and deep learning.",
   keywords: [
@@ -37,7 +35,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Manan Bhardwaj" }],
   openGraph: {
-    title: "Manan Bhardwaj — Product Engineer",
+    title: "Manan Bhardwaj",
     description:
       "Building scalable web and cloud-native applications, while exploring AI, ML and DL.",
     url: siteUrl,
@@ -46,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manan Bhardwaj — Product Engineer",
+    title: "Manan Bhardwaj",
     description:
       "Building scalable web and cloud-native applications, while exploring AI, ML and DL.",
   },

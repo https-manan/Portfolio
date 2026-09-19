@@ -28,9 +28,26 @@ export default function Nav() {
               href="https://github.com/https-manan"
               target="_blank"
               rel="noreferrer"
-              className="text-ink transition-opacity hover:opacity-60"
-            >
+              className="text-ink transition-opacity hover:opacity-60">
               GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/manan-bhardwaj-8b1b6b433/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-ink transition-opacity hover:opacity-60">
+              LinkdIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://leetcode.com/u/https-manan/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-ink transition-opacity hover:opacity-60">
+              LeetCode
             </a>
           </li>
         </ul>

@@ -6,7 +6,7 @@ export default function Hero() {
         A product engineer.
       </h1>
       <p className="mt-4 max-w-[46ch] font-body text-lg text-muted">
-        Building scalable web applications and ML systems.
+        Building real-time systems and ML products.
       </p>
       <div className="mt-8 flex gap-4">
         <a

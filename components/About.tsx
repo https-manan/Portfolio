@@ -10,7 +10,7 @@ const imageSrc = "/manan.png";
 type Tab = "ai" | "web";
 
 export default function About() {
-  const [tab, setTab] = useState<Tab>("ai");
+  const [tab, setTab] = useState<Tab>("web");
 
   return (
     <section id="about" className="border-t border-line bg-bg-alt">
@@ -40,8 +40,8 @@ export default function About() {
 
           <div>
             <p className="max-w-[60ch] font-body text-lg leading-relaxed text-ink">
-              Hi, I&apos;m Manan. I build real-time backend systems and train ML models from
-              scratch, then ship both behind a clean, simple interface. Here are a few examples
+              Hi, I&apos;m Manan. I build real-time backend systems and train ML models, 
+              then ship both behind a clean, simple interface. Here are a few examples
               of my work.
             </p>
 
@@ -70,6 +70,15 @@ export default function About() {
           <div className="mb-8 inline-flex border border-line">
             <button
               type="button"
+              onClick={() => setTab("web")}
+              aria-pressed={tab === "web"}
+              className={`border-l border-line px-5 py-2 font-mono text-xs transition-colors ${
+                tab === "web" ? "bg-ink text-bg" : "text-ink hover:bg-line/30"
+              }`}>
+              Web Dev
+            </button>
+            <button
+              type="button"
               onClick={() => setTab("ai")}
               aria-pressed={tab === "ai"}
               className={`px-5 py-2 font-mono text-xs transition-colors ${
@@ -77,16 +86,6 @@ export default function About() {
               }`}
             >
               AI / ML
-            </button>
-            <button
-              type="button"
-              onClick={() => setTab("web")}
-              aria-pressed={tab === "web"}
-              className={`border-l border-line px-5 py-2 font-mono text-xs transition-colors ${
-                tab === "web" ? "bg-ink text-bg" : "text-ink hover:bg-line/30"
-              }`}
-            >
-              Web Dev
             </button>
           </div>
 

@@ -62,8 +62,14 @@ export default function Contact() {
             </p>
             <br />
             <p>
-              <a href="#" className="underline underline-offset-4 hover:text-blue-700">
+              <a href="https://www.linkedin.com/in/manan-bhardwaj-8b1b6b433/" className="underline underline-offset-4 hover:text-blue-700">
                 LinkedIn
+              </a>
+            </p>
+            <br />
+            <p>
+              <a href="https://leetcode.com/u/https-manan/" className="underline underline-offset-4 hover:text-blue-700">
+                LeetCode
               </a>
             </p>
           </div>

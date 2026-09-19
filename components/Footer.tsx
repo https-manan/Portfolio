@@ -7,7 +7,7 @@ export default function Footer() {
           <a href="https://github.com/https-manan" target="_blank" rel="noreferrer" className="hover:text-ink">
             GitHub
           </a>
-          <a href="#" className="hover:text-ink">
+          <a href="https://www.linkedin.com/in/manan-bhardwaj-8b1b6b433/" className="hover:text-ink">
             LinkedIn
           </a>
           <a href="mailto:mananbhardwaj2705@gmail.com" className="hover:text-ink">
